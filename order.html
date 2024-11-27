@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head begins -->
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Order Pizza</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- link to font-family from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&family=Six+Caps&display=swap" rel="stylesheet">
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- head ends -->
+
+<!-- body begins -->
+<body>
+    <!-- header begins -->
+    <header>
+        <nav>
+            <!-- company logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./photoes/yummy_bites_logo.png" alt="Company logo">
+                </a>
+            </div>
+
+            <!-- nav tags -->
+            <section>
+                <div class="navtags">
+                    <a href="index.html">Home</a>
+                    <a href="index.html">Contact Us</a>
+                    <a href="index.html">Sign Up</a>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!-- header ends -->
+
+
+
+    <!-- main div -->
+    <div class="body">
+        <!-- sign up div -->
+        <section class="signin" id="signup">
+            <div class="loginform">
+                <!-- heading -->
+
+                <h3>Sign Up</h3>
+
+                <!-- form for sign up -->
+                <form>
+
+                    <!-- types used -> ( text, number, email, password, submit ) -->
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <label for="contact">Phone No.:</label>
+                    <input type="number" id="contact" name="contact" required>
+                    <label for="mail">Emali Id:</label>
+                    <input type="email" id="mail" name="mail" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+
+
+        <div class="borderdiv">
+            <div></div>
+        </div>
+
+        <!-- order div -->
+
+        <section class="order1">
+            <div class="orderform">
+                <!-- heading -->
+                <h3>Order</h3>
+                <!-- form for ordering a pizza -->
+                <form>
+
+                    <!-- types used -> ( radio, select, checkbox, reset, submit) -->
+                    <h3>Pizza Crust:-</h3>
+                    <input type="radio" id="small" name="crust" value="Small" required>
+                    <label for="small">Small</label><br>
+                    <input type="radio" id="medium" name="crust" value="Medium" required>
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="large" name="crust" value="Large" required>
+                    <label for="large">Large</label><br>
+                    <input type="radio" id="xlarge" name="crust" value="Extra Large" required>
+                    <label for="xlarge">Extra Large</label><br>
+
+                    <h3>Pizza Dough:-</h3>
+                    <select name="Crust" id="crust">
+                        <option value="Original">Original</option>
+                        <option value="Thin">Thin</option>
+                        <option value="Thick">Thick</option>
+                        <option value="Gluten Free">Gluten Free</option>
+                    </select>
+
+                    <h3>Extra Veggies:-</h3>
+                    <input type="checkbox" id="tomato" name="tomato" value="tomato">
+                    <label for="tomato">Tomato</label><br>
+                    <input type="checkbox" id="Onion" name="Onion" value="Onion">
+                    <label for="Onion">Onion</label><br>
+                    <input type="checkbox" id="Olives" name="Olives" value="Olives">
+                    <label for="Olives">Olives</label><br>
+                    <input type="checkbox" id="Pine-apple" name="Pine-apple" value="Pine-apple">
+                    <label for="Pine-apple">Pine-apples</label>
+
+                    <h3>Extra Toppings:-</h3>
+                    <input type="checkbox" id="Oregano" name="Oregano" value="Oregano">
+                    <label for="Oregano">Oregano</label><br>
+                    <input type="checkbox" id="Chilli_Flakes" name="Chilli_Flakes" value="Chilli_Flakes">
+                    <label for="Chilli_Flakes">Chilli Flakes</label><br>
+                    <input type="checkbox" id="Garlic_Sause" name="Garlic_Sause" value="Garlic_Sause">
+                    <label for="Garlic_Sause">Garlic Sause</label><br>
+                    <input type="checkbox" id="Mustard" name="Mustard" value="Mustard">
+                    <label for="Mustard">Mustard</label><br>
+                    <input type="checkbox" id="Ranch" name="Ranch" value="Ranch">
+                    <label for="Ranch">Ranch</label>
+
+                    <h3>Order:-</h3>
+                    <input type="radio" id="Pickup" name="Order" value="Pickup" required>
+                    <label for="Pickup">Pick-up</label><br>
+                    <input type="radio" id="CashonDelievery" name="Order" value="Cash-on-Delievery" required>
+                    <label for="CashonDelievery">Cash on Delievery</label><br>
+
+                    <h3>Payment Type:-</h3>
+                    <input type="radio" id="Debit" name="PaymentType" value="Debit" required>
+                    <label for="Debit">Debit</label><br>
+                    <input type="radio" id="Credit" name="PaymentType" value="Credit" required>
+                    <label for="Credit">Credit</label><br>
+                    <input type="radio" id="Cash" name="PaymentType" value="Cash" required>
+                    <label for="Cash">Cash</label><br>
+                    <input type="radio" id="MasterCard" name="PaymentType" value="MasterCard" required>
+                    <label for="MasterCard">MasterCard</label><br>
+                    <input type="radio" id="YummyPoints" name="PaymentType" value="YummyPoints" required>
+                    <label for="YummyPoints">Yummy Points</label><br>
+
+                    <div class="formbuttondiv">
+                        <button type="reset">Cancel Order</button>
+                        <button type="submit">Order Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
